@@ -1,8 +1,7 @@
 name: Build
 on:
   push:
-    branches:
-      - main
+    branches: [ main, SonarCloudDotNet5 ]
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
@@ -43,5 +42,6 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"KurnakovMaksim_SonarCloudDotNet" /o:"kurnakovmaksim" /d:sonar.login="${{ secrets.MY_SECRET_NAME }}" /d:sonar.host.url="https://sonarcloud.io"
-          dotnet build --no-restore
+          dotnet restore
+          dotnet build
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.MY_SECRET_NAME }}"

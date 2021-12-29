@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SonarCloudDotNet5", "SonarC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonarCloudDotNet6", "SonarCloudDotNet6\SonarCloudDotNet6.csproj", "{8A28211C-CA0A-4FCA-B8C8-F21C83F0A7E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonarCloudDotNetCore3", "SonarCloudDotNetCore3\SonarCloudDotNetCore3.csproj", "{A53EBF38-5B74-46C3-9500-C05F7735260A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8A28211C-CA0A-4FCA-B8C8-F21C83F0A7E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A28211C-CA0A-4FCA-B8C8-F21C83F0A7E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A28211C-CA0A-4FCA-B8C8-F21C83F0A7E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A53EBF38-5B74-46C3-9500-C05F7735260A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A53EBF38-5B74-46C3-9500-C05F7735260A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A53EBF38-5B74-46C3-9500-C05F7735260A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A53EBF38-5B74-46C3-9500-C05F7735260A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

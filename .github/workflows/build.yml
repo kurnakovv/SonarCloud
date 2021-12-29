@@ -9,6 +9,10 @@ jobs:
     name: Build
     runs-on: windows-latest
     steps:
+      - name: Setup .NET Core 3
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 3.0.x
       - name: Setup .NET 5
         uses: actions/setup-dotnet@v1
         with:
